@@ -1,8 +1,5 @@
 package com.shop.cafe.controller;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -28,7 +25,7 @@ public class MemberController {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			return null;
+			return "nickname이나 email이 중복됩니다.";
 		}
 	}
 	
