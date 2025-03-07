@@ -11,7 +11,7 @@ import com.shop.cafe.dto.Product;
 import com.shop.cafe.service.ProductService;
 
 @RestController
-@CrossOrigin("http://127.0.0.1")
+@CrossOrigin("http://127.0.0.1:5500/")
 public class ProductController {
 
 	@Autowired
@@ -28,6 +28,7 @@ public class ProductController {
 				storage.put ("firstPageProduct", list);
 				return list;
 			}
+			
 			return (List<Product>) o;
 			
 		} catch (Exception e) {
